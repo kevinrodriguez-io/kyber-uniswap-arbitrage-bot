@@ -134,7 +134,7 @@ const init = async () => {
           console.log(`Transaction hash: ${receipt.transactionHash}`);
         }
       }
-
+      
       if (daiFromKyber.gt(AMOUNT_DAI_WEI)) {
         const tx = flashloan.methods.initiateFlashloan(
           addresses.dydx.solo,
